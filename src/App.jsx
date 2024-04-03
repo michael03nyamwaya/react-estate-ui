@@ -1,9 +1,12 @@
 
 import Home from './routes/homePage/Home';
 import List from './routes/listPage/List';
-import Single from './routes/singlePage/Single';
-import Profile from './routes/profilePage/Profile';
+import SinglePage from './routes/singlePage/SinglePage';
+import ProfilePage from './routes/profilePage/ProfilePage';
 import Layout from './routes/layout/Layout';
+import Login from './routes/login/Login';
+import Register from './routes/register/Register';
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -27,12 +30,20 @@ function App() {
         },
         {
           path:"/:id",
-          element:<Single/>
+          element:<SinglePage/>
         },
         {
           path:"/profile",
-          element:<Profile/>
+          element:<ProfilePage/>
+        },
+        {
+          path:"/login",
+          element:<Login/>
+        }, {
+          path:"/register",
+          element:<Register/>
         }
+        
       ]
     },
   

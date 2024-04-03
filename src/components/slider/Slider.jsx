@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './sider.scss'
+import './slider.scss'
 
 export default function Sider({images}) {
   const [imageIndex,setImageIndex] =useState(null)
